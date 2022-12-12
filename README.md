@@ -345,6 +345,18 @@ at
 * Kode kan merges til main branch ved å lage en Pull request med minst en godkjenning
 * Kode kan merges til main bare når feature branchen som pull requesten er basert på, er verifisert av GitHub Actions.
 
+For å konfigurere en fork på en slik måte at ingen kan pushe kode direkte til main branch og den koden bare kan slås sammen med main branch via pull-request med minst én godkjenning, kan følgende trinn tas:
+
+I innstillingene for repository, naviger til delen "branches" og aktiver branch protection for main branch.
+
+I innstillingene for branch protection velger du alternativet for å kreve pull-requests for å slå sammen kode i main branch. 
+
+I instillingene for branch protection velger du alternativet for å kreve minst én godkjenning på pull-requests før koden kan slås sammen med main branch.
+
+I instillingene for branch protection velger du alternativet for å kreve at feature branchen som en pull-request er basert på, skal verifiseres av GitHub Actions før koden kan slås sammen til main branch. 
+
+Dette vil passe på at ingen kan pushe kode direkte til main branch og den koden kun kan flettes inn i main branch via en pull-request med minst én godkjenning, og kun hvis feature branch som pull-requesten er basert på har blitt verifisert av GitHub Actions.
+
 ## Del 3 - Docker
 
 Applikasjonen er laget for å pushe et container image til Docker Hub. 
