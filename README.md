@@ -292,6 +292,7 @@ Beskriv med egne ord;
   disse? Hvilke DevOps prinsipper blir brutt?
   
 Svar:
+Slik det er beskrevet i oppgaveteksten er det stort potensiale å hente i effektivitet. Ved å endre DevOps rutiner kan de streamline prosessen ytterligere, og få mer bytte ut av nye oppdateringer. De bryter DevOps prinsippet automasjon, ved at de må manuelt bruke FTP til å overføre en Spring boot JAR sammen med dokumentasjon i en zip fil. Det andre prinsippet det bryter er samarbeid, de kunne fått en bedre flyt mellom utvikling og produksjon ved å ikke holde det helt separat. Det kan være en fordel at samme team jobber med både utvikling og produksjon, slik at de forstår de nye oppdateringene og ikke trenger å ta en roll back når noe går feil i produksjon. De bryter prinsippet om "Lean principles", og hyrte inn et eksternt team som bare kostet de penger for å ikke ha fått utført noe som helst. Hvis de tester mer grundig og forbereder seg bedre for fremtidige scenarioer slipper de å måtte gjøre en roll back og miste funksjonalitet som egt skulle ut til kunder. 
 
 * En vanlig respons på mange feil under release av ny funksjonalitet er å gjøre det mindre hyppig, og samtidig forsøke å legge på mer kontroll og QA. Hva er problemet med dette ut ifra et DevOps perspektiv, og hva kan være en bedre tilnærming?
 
