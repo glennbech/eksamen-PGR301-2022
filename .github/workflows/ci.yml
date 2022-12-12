@@ -22,3 +22,8 @@ jobs:
 
       - name: Build with Maven
         run: mvn --no-transfer-progress -B compile --file pom.xml
+        
+      - name: Run unit tests
+        run: mvn --no-transfer-progress -B test --file pom.xml
+        if: failure()
+      
