@@ -452,7 +452,14 @@ De kommenterte derfor bare ut S3 bucket koden, og gikk videre til neste oppgave.
 Se på ```provider.tf filen```. 
 
 * Forklar med egne ord. Hva er årsaken til dette problemet? Hvorfor forsøker Terraform å opprette en bucket, når den allerede eksisterer? 
+
+svar:
+Det kan enten være fordi bucketen ble opprettet utenfor Terraform eller fordi det er lenge siden det er blitt oppdatert i state-filen og den er utdatert.
+
 * Gjør nødvendige Endre slik denne slik at Terraform kan kjøres flere ganger uten å forsøke å opprette ressurser hver gang den kjører.
+
+svar:
+Fikk ikke gjort denne delen men vet at du kan bruke terraform destroy for så å bruke terrafrom apply for å fjerne alle ressursene som terraform laget og lage det på nytt. Eller muligens bruke Terrafrom import kommandoen (terraform import aws_s3_bucket.analytics-jim "navn på bucket") for å prøve å importere den eksisterende bucketen så Terraform vet at den eksisterer og ikke prøver å duplisere den.  
 * Fjern kommentarene fra ```databacket.tf``` slik at Terraform-koden  også lager en S3 bucket. 
 
 ### Oppgave 2
