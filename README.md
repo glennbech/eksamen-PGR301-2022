@@ -276,11 +276,26 @@ Beskriv med egne ord;
 
 * Hva er utfordringene med dagens systemutviklingsprosess - og hvordan vil innføring av DevOps kunne være med på å løse
   disse? Hvilke DevOps prinsipper blir brutt?
+Svar:
+
+
 * En vanlig respons på mange feil under release av ny funksjonalitet er å gjøre det mindre hyppig, og samtidig forsøke å legge på mer kontroll og QA. Hva er problemet med dette ut ifra et DevOps perspektiv, og hva kan være en bedre tilnærming?
+Svar:
+Fra et DevOps-perspektiv er problemet med denne tilnærmingen at den fokuserer på å fikse problemer etter at de allerede har oppstått, i stedet for å ta en proaktiv tilnærming for å forhindre dem i utgangspunktet. Denne reaktive tilnærmingen kan føre til en syklus med gjentatte ganger med å fikse de samme problemene, i stedet for å adressere de underliggende problemene og forbedre det generelle systemets pålitelighet.
+
+En bedre tilnærming ville være å fokusere på å bygge kvalitet inn i utviklingsprosessen fra starten av. Dette kan innebære implementering av praksiser som kontinuerlig integrasjon og kontinuerlig levering, som kan bidra til å identifisere og fikse feil tidlig i utviklingsprosessen, før de har en sjanse til å påvirke brukerne. Det kan også innebære å implementere automatiserte test- og overvåkingssystemer for å sikre at systemet fungerer som det skal i produksjonen. Ved å ta en proaktiv tilnærming til kvalitet, kan organisasjoner forbedre sin generelle systempålitelighet og redusere behovet for reaktive rettelser.
+
 * Teamet overleverer kode til en annen avdelng som har ansvar for drift - hva er utfordringen med dette ut ifra et DevOps perspektiv, og hvilke gevinster kan man få ved at team han ansvar for både drift- og utvikling? 
+Svar:
+En av hovedutfordringene med denne tilnærmingen er at den kan skape et skille mellom utviklingsteamet og driftsteamet, noe som fører til kommunikasjons- og samarbeidsspørsmål. Utviklingsteamet kan være fokusert på å levere nye funksjoner og funksjonalitet, mens driftsteamet er fokusert på å sikre at systemet kjører problemfritt i produksjonen. Dette kan resultere i manglende koordinering og samordning mellom de to teamene, noe som kan føre til feil og nedetid.
+
+På den annen side, når utviklingsteamet også er ansvarlig for driften, kan de ha en mer omfattende forståelse av hele systemet, inkludert hvordan det er bygget, hvordan det fungerer i produksjonen og hvordan det påvirkes av endringer. Dette kan gjøre teamet i stand til å ta en mer helhetlig tilnærming til utvikling, noe som kan forbedre den generelle påliteligheten og stabiliteten til systemet. I tillegg kan det å ha utviklingsteamet ansvarlige for driften fremme bedre samarbeid og kommunikasjon i organisasjonen, noe som kan bidra til å forbedre effektiviteten til den generelle utviklingsprosessen.
+
 * Å release kode ofte kan også by på utfordringer. Beskriv hvilke- og hvordan vi kan bruke DevOps prinsipper til å redusere
   eller fjerne risiko ved hyppige leveraner.
-
+ Svar:
+ Å frigi kode ofte kan by på flere utfordringer, inkludert risikoen for å introdusere feil eller regresjoner i systemet, behovet for å administrere og koordinere flere utgivelser, og den potensielle innvirkningen på systemytelse og stabilitet. For å redusere eller fjerne disse risikoene kan organisasjoner bruke DevOps-prinsipper for å forbedre den generelle påliteligheten og stabiliteten til systemet. Dette kan innebære implementering av praksiser som kontinuerlig integrasjon og kontinuerlig levering, som kan bidra til å identifisere og fikse feil tidlig i utviklingsprosessen. Det kan også innebære implementering av automatiserte test- og overvåkingssystemer for å sikre at systemet fungerer som det skal i produksjonen. Ved å ta en proaktiv tilnærming til kvalitet og pålitelighet, kan organisasjoner redusere risikoen forbundet med hyppige leveranser.
+  
 ## Del 2 - CI
 
 Konsulentene som har jobbet med innføring av DevOps har startet på en GitHub actions workflow for kontinuerlig
